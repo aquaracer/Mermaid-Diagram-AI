@@ -1,0 +1,54 @@
+[project]
+name = "mermaid-ai"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.13"
+dependencies = [
+    "openai>=2.17.0",
+    "pydantic>=2.6.0",
+    "pydantic-settings>=2.6.0",
+    "python-dotenv>=1.0.1",
+    "requests>=2.32.5",
+    "ruff>=0.15.0"
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py313"
+
+exclude = [
+    ".git",
+    ".venv",
+    "venv",
+    "migrations",
+    "__pycache__",
+]
+
+select = [
+    "E",
+    "F",
+    "I",
+    "UP",
+    "N",
+    "B",
+    "C4",
+    "RUF",
+]
+
+ignore = [
+    "E501",
+    "B008",
+    "RUF001",
+    "RUF002"
+]
+
+
+[tool.ruff.isort]
+known-first-party = ["payouts", "core", "apps"]
+combine-as-imports = true
+force-single-line = false
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
