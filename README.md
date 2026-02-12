@@ -75,7 +75,7 @@ mermaid-ai/
 ### Скачиваем проект
 
 ```bash
-git clone https://github.com/your-username/mermaid-ai.git
+git clone https://github.com/aquaracer/Mermaid-Diagram-AI
 cd mermaid-ai
 ```
 
